@@ -20,7 +20,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
 
       - name: Install CI
         run: npm ci
@@ -31,7 +31,7 @@ jobs:
       #Configure Git Identity
       - name: Configure Git
         run: |
-          git config --global user.name  K-TARUN-SAI
+          git config --global user.name K-TARUN-SAI
           git config --global user.email ketarajutarunsai2006@gmail.com
       
       # Deploy to GitHub Pages
